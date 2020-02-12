@@ -157,7 +157,7 @@ t = Node (Node (Leaf 1) 3 (Leaf 4))
 -- occurs = error "occurs: not yet defined"
 occurs :: a -> Tree a -> Bool
 occurs x = (Leaf y) = x == y
-occurs x (Node l y r) = x == y || occurs x 1 || occurs x r
+occurs x (Node l y r) = x == y || occurs x 1 || occurs x rs
 
 -- Flatten a tree into a list of its values
 flatten = error "flatten: not yet defined"
